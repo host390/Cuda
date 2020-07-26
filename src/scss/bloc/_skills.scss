@@ -1,0 +1,189 @@
+
+
+.skills {
+    background-color: #ffffff;
+    padding: 120px 0px;
+    &__top {
+        text-align: center;
+        margin-bottom: 85px;
+    }
+
+    &__title {
+        color: #3c4761;
+        &::after {  
+            content: '';
+            background-color: #000000;
+        }
+    }
+
+    &__subtitle {
+        color: #3c4761;
+    }
+
+    &__row {
+        display: flex;
+        overflow: auto;
+        margin:  0 -15px;
+        padding: 0px 0px 20px 0px;
+        // height: 210px;
+    }
+
+    &__column {
+        text-align: center;
+        width: 280px;
+        max-width: 280px;
+        min-width: 280px;
+        // height: 160px;
+        padding: 0px 60px;
+        &:first-child {
+            margin: 0px 0px 0px auto;
+            width: 250px;
+            max-width: 250px;
+            min-width: 250px;
+            padding-left: 30px;
+        }
+        &:last-child {
+            margin: 0px auto 0px 0;
+            width: 250px;
+            max-width: 250px;
+            min-width: 250px;
+            padding-right: 30px;
+        }
+    }
+    &__skil {
+        color: #3c4761;
+        font-family: "Titillium Web";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 33px;
+        text-transform: uppercase;
+        letter-spacing: 0.48px;
+        width: 195px;
+        transform: translate(-17.5px, 0px) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+        transform-origin: center;
+    }
+}
+
+
+$background_fome: #fff;
+.circle {
+    
+    margin-bottom: 32px;
+    // margin: 0px 60px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 160px;
+    background-color: #dfe8ed;
+    &__before {
+        z-index: 9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        visibility: visible;
+
+        background-color: #dfe8ed;
+        animation: 1s linear 1 normal running 0s forwards; // Половину полного
+    }
+
+    &__podlo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        z-index: 7;
+        transform-origin: left center;
+
+        background-color: #dfe8ed;
+    }
+
+    &__valve {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        transform: rotate(0deg);
+        // animation-name: circle__valve;
+        animation: 2s linear 1 normal running 0s forwards; // Время всего заполнения
+        transform-origin: right center;
+        z-index: 6;
+
+        background-color: #eb7d4b;
+    }
+
+    &__hole {
+        position: relative;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $background_fome;
+    }
+
+    &__percent {
+        color: #3c4761;
+        font-family: "Titillium Web";
+        font-size: 45px;
+        font-weight: 300;
+        line-height: 20.84px;
+        text-transform: uppercase;
+        letter-spacing: 0.86px;
+        span {
+            font-size: 32px;
+            letter-spacing: 0.55px;
+        }
+    }
+
+    &__after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        transform: rotate(0deg);
+        transform-origin: center right;
+
+        background-color: #eb7d4b;
+        // animation-name: circle__after;
+        animation: 1s linear 1 normal running 0s forwards; // Половину полного
+    }
+}
+
+@keyframes circle__before {
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes circle__valve {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes circle__after {
+    100% {
+        /* visibility: visible; */
+        transform: rotate(180deg);
+        z-index: 8;
+    }
+}
+

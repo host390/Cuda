@@ -3,12 +3,32 @@
 
 
 .button {
-    
-    @media (max-width: px) {
-        
-    }
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.19px;
+    text-transform: uppercase;
+    letter-spacing: 0.27px;
+    line-height: 66px;
+    border-radius: 2px;
+    color: white;
+    // padding: 0px 82px;
+    padding: 0px 10px;
+    // transition: transform 0.2s ease 0s;
 
-    @media (max-width: px) {
+    min-width: 300px;
+    &:hover {
+        transform: translate(0px, 4px) rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+        transform-origin: center;
         
+        border-bottom: 4px solid transparent;
+    } 
+    @media (max-width: 700px) {
+        font-size: 16px;
+        // padding: 0px 70px;
+        // padding: 0px 11.5%;
+
+        min-width: 250px;
     }
 }

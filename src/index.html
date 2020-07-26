@@ -3,9 +3,565 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cuda</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <!-- ТЗ:
+        10) протестировать и залить на гит
+        11) попросить проверить :)
+    -->
     
+    <!-- ОКНА -->
+    <div class="backblack"></div>
+    <a href="#up" class="uparrow">
+        <img src="img/icons/up-arrow.svg" alt="up-arrow">
+    </a>
+
+    <!-- Структура -->
+    <div class="wrapper">
+        <section class='hi'>
+           <header class="hi__header header">
+                <div class='container'>
+                    <div class="header__row">
+                        <div class="header__logo">
+                            <img src="img/logo/main_logo.svg" alt="">
+                        </div>
+                        <nav class="header__menu menu">
+                            <button class="menu__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <ul class="menu__list">
+                                <li><a href="#home" class="menu__link">Home</a></li>
+                                <li><a href="#work" class="menu__link">WORK</a></li>
+                                <li><a href="#blog" class="menu__link">Blog</a></li>
+                                <li><a href="#about" class="menu__link">About </a></li>
+                                <li><a href="#contact" class="menu__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class='container'>
+                <div class="hi__wrap">
+                    <h1 class="hi__title">Hi there! We are the new kids on the block 
+                        and we build awesome websites and mobile apps.</h1>
+                    <button class="hi__button button">WORK WITH US!</button>
+                </div>
+            </div>
+        </section>
+        <section class='servis'>
+            <div class='container'>
+                <div class="servis__top">
+                    <div class="servis__title title">
+                        SERVICES WE PROVIDE
+                    </div>
+                    <div class="servis__subtitle subtitle">
+                        We are working with both individuals and businesses from all over the globe 
+                        to create awesome websites and applications.
+                    </div>
+                </div>
+                <div class="servis__bottom">
+                    <div class="servis__row">
+                        <div class="servis__column banner">
+                            <div class="banner__logo">
+                                <img src="img/icons/flag.svg" alt="">
+                            </div>
+                            <div class="banner__name">Branding</div>
+                            <div class="banner__text">
+                                Lorem ipsum dolor sit amet, 
+                                consectetuer adipiscing elit, sed diam nonummy nibh.
+                            </div>
+                        </div>
+                        <div class="servis__column banner">
+                            <div class="banner__logo">
+                                <img src="img/icons/pan.svg" alt="">
+                            </div>
+                            <div class="banner__name">Design</div>
+                            <div class="banner__text">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  
+                            </div>
+                        </div>
+                        <div class="servis__column banner">
+                            <div class="banner__logo">
+                                <img src="img/icons/gears.svg" alt="">
+                            </div>
+                            <div class="banner__name">Development</div>
+                            <div class="banner__text">
+                                At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.
+                            </div>
+                        </div>
+                        <div class="servis__column banner">
+                            <div class="banner__logo">
+                                <img src="img/icons/rocket.svg" alt="">
+                            </div>
+                            <div class="banner__name">ROCKET SCIENCE</div>
+                            <div class="banner__text">
+                                Et harum quidem rerum est et expedita distinctio. Nam libero tempore.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='team' id='home'>
+            <div class='container'>
+                <div class="team__top">
+                    <div class="team__title title">MEET OUR BEAUTIFUL TEAM</div>
+                    <div class="team__subtitle subtitle">We are a small team of designers and developers, who help  brands with big ideas.
+                    </div>
+                </div>
+                    <div class="team__row">
+                        <div class="team__column pipl">
+                            <div class="pipl__avat">
+                                <img src="img/portfol/p_2.png" alt="">
+                            </div>
+                            <div class="pipl__name">ANNE HATHAWAY</div>
+                            <div class="pipl__dol">
+                                CEO / Marketing Guru
+                            </div>
+                            <div class="pipl__text">
+                                Lorem ipsum dolor sit amet, 
+                                consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                            </div>
+                            <div class="pipl__mass mass">
+                                <div class="mass__wrapp">
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Facebook_Icon.svg" alt="">
+                                    </div>
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Twitter.svg" alt="">
+                                    </div>
+                                    <div class="mass__icon">
+                                        <img src="img/icons/LinkedIn_icon.svg" alt="">
+                                    </div>
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Mail.svg" alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="team__column pipl">
+                            <div class="pipl__avat">
+                                <img src="img/portfol/p_2.png" alt="">
+                            </div>
+                            <div class="pipl__name">Kate Upton</div>
+                            <div class="pipl__dol">
+                                Creative Director
+                            </div>
+                            <div class="pipl__text">
+                                Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.
+                            </div>
+                            <div class="pipl__mass mass">
+                                <div class="mass__wrapp">
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Twitter.svg" alt="">
+                                    </div>
+                                    <div class="mass__icon">
+                                        <img src="img/icons/LinkedIn_icon.svg" alt="">
+                                    </div>
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Mail.svg" alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="team__column pipl">
+                            <div class="pipl__avat">
+                                <img src="img/portfol/p_2.png" alt="">
+                            </div>
+                            <div class="pipl__name">Olivia Wilde</div>
+                            <div class="pipl__dol">
+                                Lead Designer
+                            </div>
+                            <div class="pipl__text">
+                                Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.
+                            </div>
+                            <div class="pipl__mass mass">
+                                <div class="mass__wrapp">
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Facebook_Icon.svg" alt="">
+                                    </div>
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Twitter.svg" alt="">
+                                    </div>
+                                    <div class="mass__icon">
+                                        <img src="img/icons/LinkedIn_icon.svg" alt="">
+                                    </div>
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Mail.svg" alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="team__column pipl">
+                            <div class="pipl__avat">
+                                <img src="img/portfol/p_2.png" alt="">
+                            </div>
+                            <div class="pipl__name">Ashley Greene</div>
+                            <div class="pipl__dol">
+                                SEO / Developer
+                            </div>
+                            <div class="pipl__text">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                            </div>
+                            <div class="pipl__mass mass">
+                                <div class="mass__wrapp">
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Facebook_Icon.svg" alt="">
+                                    </div>
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Twitter.svg" alt="">
+                                    </div>
+                                    <div class="mass__icon">
+                                        <img src="img/icons/Mail.svg" alt="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>                        
+                    </div>
+            </div>
+        </section>
+        <section class='skills' id='work'>
+            <div class='container'>
+                <div class="skills__top">
+                    <div class="skills__title title">WE GOT SKILLS!</div>
+                    <div class="skills__subtitle subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <div class="skills__row">
+                    <div class="skills__column">
+                        <div class='circle'>
+                            <div class='circle__before'></div>
+                            <div class='circle__podlo'></div>
+                            <div class='circle__valve' style="background-color: #30bae7;"></div>
+                            <div class='circle__hole'>
+                                <div class='circle__percent'>90<span>%</span></div>
+                            </div>
+                            <div class='circle__after' style="background-color: #30bae7;"></div>
+                        </div>
+                        <div class="skills__skil">Web Design</div>
+                    </div>
+                    <div class="skills__column">
+                        <div class='circle'>
+                            <div class='circle__before'></div>
+                            <div class='circle__podlo'></div>
+                            <div class='circle__valve' style="background-color: #d74680;"></div>
+                            <div class='circle__hole'>
+                                <div class='circle__percent'>75<span>%</span></div>
+                            </div>
+                            <div class='circle__after' style="background-color: #d74680;"></div>
+                        </div>
+                        <div class="skills__skil">HTML / CSS</div>
+                    </div>
+                    <div class="skills__column">
+                        <div class='circle'>
+                            <div class='circle__before'></div>
+                            <div class='circle__podlo'></div>
+                            <div class='circle__valve' style="background-color: #15c7a8;"></div>
+                            <div class='circle__hole'>
+                                <div class='circle__percent'>70<span>%</span></div>
+                            </div>
+                            <div class='circle__after' style="background-color: #15c7a8;"></div>
+                        </div>
+                        <div class="skills__skil">GRAPHIC DESIGN</div>
+                    </div>
+                    <div class="skills__column">
+                        <div class='circle'>
+                            <div class='circle__before'></div>
+                            <div class='circle__podlo'></div>
+                            <div class='circle__valve' style="background-color: #eb7d4b;"></div>
+                            <div class='circle__hole'>
+                                <div class='circle__percent'>85<span>%</span></div>
+                            </div>
+                            <div class='circle__after' style="background-color: #eb7d4b;"></div>
+                        </div>
+                        <div class="skills__skil">UI / UX</div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id='blog'>
+            <div class='container'>
+                <div class="portfolio__head">
+                    <div class="portfolio__titile title">OUR PORTFOLIO</div>
+                    <div class="portfolio__subtitle subtitle">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+                        consectetur, adipisci velit, sed quia non numquam
+                    </div>
+                    <nav class="portfolio__navbar navbar">
+                        <!-- <ul class="navbar__list">
+                            <li class="navbar__list-item navbar__list-item_active">
+                                <a href="#" class="navbar__link">ALL</a>
+                            </li>
+                            <li class="navbar__list-item"><a href="#" class="navbar__link">WEB</a></li>
+                            <li class="navbar__list-item"><a href="#" class="navbar__link">APPS</a></li>
+                            <li class="navbar__list-item"><a href="#" class="navbar__link">ICONS</a></li>
+                        </ul> -->
+                        <ul class="navbar__list">
+                            <li><a href="#" class="navbar__link navbar__link_active">ALL</a></li>
+                            <li><a href="#" class="navbar__link">WEB</a></li>
+                            <li><a href="#" class="navbar__link">APPS</a></li>
+                            <li><a href="#" class="navbar__link">ICONS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="portfolio__body">
+
+                    <div class="portfolio__row portfolio__row_active">
+                        <div class="portfolio__column sait">
+                            <div class="sait__img">
+                                <img src="img/portfol/img_1.png" alt="1">
+                            </div>
+                            <div class="sait__name">Isometric Perspective Mock-Up</div>
+                        </div>
+                        <div class="portfolio__column sait">
+                            <div class="sait__img">
+                                <img src="img/portfol/img_2.png" alt="1">
+                            </div>
+                            <div class="sait__name">Time Zone App UI</div>
+                        </div>
+                        <div class="portfolio__column sait">
+                            <div class="sait__img">
+                                <img src="img/portfol/img_3.png" alt="1">
+                            </div>
+                            <div class="sait__name">Viro Media Players UI</div>
+                        </div>
+                        <div class="portfolio__column sait">
+                            <div class="sait__img">
+                                <img src="img/portfol/img_4.png" alt="1">
+                            </div>
+                            <div class="sait__name">Blog / Magazine Flat UI Kit</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__row">
+                        <div class="portfolio__column sait">
+                            <div class="sait__img">
+                                <img src="img/portfol/img_2.png" alt="1">
+                            </div>
+                            <div class="sait__name">Time Zone App UI</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__row">
+                        <div class="portfolio__column sait">
+                            <div class="sait__img">
+                                <img src="img/portfol/img_3.png" alt="1">
+                            </div>
+                            <div class="sait__name">Viro Media Players UI</div>
+                        </div>
+                        <div class="portfolio__column sait">
+                            <div class="sait__img">
+                                <img src="img/portfol/img_4.png" alt="1">
+                            </div>
+                            <div class="sait__name">Blog / Magazine Flat UI Kit</div>
+                        </div>
+                        <div class="portfolio__column sait">
+                            <div class="sait__img">
+                                <img src="img/portfol/img_3.png" alt="1">
+                            </div>
+                            <div class="sait__name">Viro Media Players UI</div>
+                        </div>
+                        <div class="portfolio__column sait">
+                            <div class="sait__img">
+                                <img src="img/portfol/img_4.png" alt="1">
+                            </div>
+                            <div class="sait__name">Blog / Magazine Flat UI Kit</div>
+                        </div>
+                        <div class="portfolio__column sait">
+                            <div class="sait__img">
+                                <img src="img/portfol/img_3.png" alt="1">
+                            </div>
+                            <div class="sait__name">Viro Media Players UI</div>
+                        </div>
+                    </div>
+
+                    <button class="portfolio__button button">LOAD MORE PROJECTS</button>
+                </div>
+                
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class='container'>
+                <div class="about__top">
+                    <div class="about__title title">WHAT POEPLE SAY ABOUT US</div>
+                    <div class="about__subtitle subtitle">Our clients love us!</div>
+                </div>
+                <div class="about__row">
+                    <div class="about__column comment">
+                        <div class="comment__left">
+                            <div class="comment__avatr">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                        <div class="comment__right">
+                            <div class="comment__text">
+                                “Nullam dapibus blandit orci, viverra gravida dui lobortis   eget. Maecenas fringilla urna eu nisl scelerisque.”
+                            </div>
+                            <div class="comment__name">Chanel Iman</div>
+                            <div class="comment__post">CEO of Pinterest</div>
+                        </div>
+                    </div>
+                    <div class="about__column comment">
+                        <div class="comment__left">
+                            <div class="comment__avatr">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                        <div class="comment__right">
+                            <div class="comment__text">
+                                “Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+                            </div>
+                            <div class="comment__name">ADRIANA LIMA</div>
+                            <div class="comment__post">Founder of Instagram</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__row">
+                    <div class="about__column comment">
+                        <div class="comment__left">
+                            <div class="comment__avatr">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                        <div class="comment__right">
+                            <div class="comment__text">
+                                “Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+                            </div>
+                            <div class="comment__name">ANNE HATHAWAY</div>
+                            <div class="comment__post">Lead Designer at Behance</div>
+                        </div>
+                    </div>
+                    <div class="about__column comment">
+                        <div class="comment__left">
+                            <div class="comment__avatr">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                        <div class="comment__right">
+                            <div class="comment__text">
+                                “Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”
+                            </div>
+                            <div class="comment__name">EMMA STONE
+                            </div>
+                            <div class="comment__post">Co-Founder of Shazam
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </section>
+        <section class="touch" id='contact'>
+            <div class='container'>
+                <div class="touch__top">
+                    <div class="touch__title title">GET IN TOUCH</div>
+                    <div class="touch__subtitle subtitle">
+                        1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+                    </div>
+                </div>
+                <div class="touch__body">
+                    <!-- <form class="touch__form form">
+                        <input placeholder="Your Name *" required class="form__name" type="text">
+                        <input placeholder="Your Email *" required class="form__email" type="text">
+                        <div class="form__textarealable">
+                            <textarea placeholder="Your Message *" required class="form__message" name="" id="" cols="30" rows="10"></textarea>
+                            <div class="form__arrow">
+                                <img src="img/icons/Arrow_form.svg" alt="">
+                            </div>
+                        </div>
+                        <input type="submit" value="SEND MESSAGE" class="form__button button">
+                    </form> -->
+
+                    <form class="touch__form form">
+
+                        <div class='form__myinput myinput'>
+                            <div class='myinput__placeholder'>
+                                Your Name <span>*</span>
+                            </div>
+                            <input class='myinput__input' type='text' name='' placeholder=''/>
+                        </div>
+
+                        <div class='form__myinput myinput'>
+                            <div class='myinput__placeholder'>
+                                Your Email <span>*</span>
+                            </div>
+                            <input class='myinput__input' type='email' name='' placeholder=''/>
+                        </div>
+                        <!-- <div class="form__wrapp">
+                            <input placeholder="Your Name *" class="form__name" type="text">
+                            <input placeholder="Your Email *" class="form__email" type="text">
+                        </div> -->
+
+                        <div class='form__myinput myinput myinput_textarea'>
+                            <div class='myinput__placeholder myinput__placeholder_textarea'>
+                                Your Message <span>*</span>
+                            </div>
+                            <textarea class="myinput__input myinput__input_textarea" required></textarea>
+                            <div class="form__arrow">
+                                <img src="img/icons/Arrow_form.svg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Надо что-то делать с лайн хайдом, а то в тексе ареа смотриться не очень -->
+
+                        <!-- <div class="form__textarealable">
+                            <textarea placeholder="Your Message *" required class="form__message" name="" id="" cols="30" rows="10"></textarea>
+                            <div class="form__arrow">
+                                <img src="img/icons/Arrow_form.svg" alt="">
+                            </div>
+                        </div> -->
+                        <input type="submit" value="SEND MESSAGE" class="form__button button">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class='container'>
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__mass">Facebook</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__mass">Twitter</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__mass">Google+</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__mass">LinkedIn</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__mass">Behance</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__mass">Dribbble</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__mass">GitHub</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </div>
+
+    
+
 </body>
 </html>

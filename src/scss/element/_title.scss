@@ -2,12 +2,47 @@
 
 
 .title {
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    padding-bottom: 21px;
+    margin-bottom: 23px;
+    &::after {  
+        content: '';
+        display: block;
+        width: 87px;
+        height: 4px;
+        background-color: #000000;
+        opacity: 0.15;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+    } 
+}
+@media (max-width: 579px) {
+    .title {
+        font-size: 35px;
+    }   
+}
 
-    @media (max-width: px) {
-        
-    }
+.subtitle {
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    padding: 0px 21%;
+}
 
-    @media (max-width: px) {
-        
-    }
+@media (max-width: 579px) {
+    .subtitle {
+        padding: 0px 4%;
+    }   
 }
